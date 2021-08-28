@@ -14,9 +14,9 @@ import mysql.connector pip install pymysql
 Teniendo ya los paquetes necesarios, nos conectamos a la base de datos. Para ello, creamos una variable llamada “myConnetion” y mediante PyMySQL, almacenamos la ruta de la base de datos, el usuario, la contraseña y el nombre de la base de datos. En definitiva la información necesaria para establecer la conexión con la base de datos.
 
 --------
-import pymysql myConnection = pymysql.connect( host='route', user= 'user', passwd='password', db='db' )
-cur = myConnection.cursor() 
-cur.execute( "SELECT* FROM TTable" ) for first_name in cur.fetchall()
-print (first_name) 
-myConnection.close()
+      import pymysql myConnection = pymysql.connect( host='route', user= 'user', passwd='password', db='db' )
+      cur = myConnection.cursor() 
+      cur.execute( "SELECT* FROM TTable" ) for first_name in cur.fetchall()
+        print (first_name) 
+      myConnection.close()
 -------
